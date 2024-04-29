@@ -1,0 +1,42 @@
+{
+  "name": "charactercounter",
+  "widgetName": "CharacterCounter",
+  "version": "1.0.0",
+  "description": "Counter next to a text input field or area.",
+  "copyright": "Linden-MX all rights reserved.",
+  "author": "Lucas Hijman",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "../../Offline projects/Pluggable widget",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "linden-it",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^10.5.0",
+    "@types/big.js": "^6.0.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-native": "0.70.7"
+  },
+  "overrides": {
+    "react": "18.2.0",
+    "react-native": "0.70.7"
+  }
+}
